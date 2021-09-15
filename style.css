@@ -21,13 +21,15 @@ body * {
   right: 0;
 }
 
-.toolbar h1 {
+.toolbar a {
   margin: 0;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   padding: 10px 24px;
   text-align: center;
+  text-decoration: none;
+  color: #28352f;
 }
 
 .btn-trigger {
@@ -59,6 +61,7 @@ body * {
   line-height: 52px;
   margin: 0;
   flex-direction: column;
+  text-align: center;
 }
 
 .headline h2 span {
@@ -72,23 +75,27 @@ body * {
 
 .supporting-txt {
   margin: 58px 0;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   color: #172b4d;
   text-align: center;
 }
 
-.social-media-icons {
-  margin-top: 58px;
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.to-bottom-btn {
   align-self: center;
-}
-
-.social-media-icons img {
-  margin: 0 10px;
-}
-
-.social-media-icons img:hover {
+  margin-top: 56px;
   cursor: pointer;
 }
