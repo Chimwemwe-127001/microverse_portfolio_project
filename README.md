@@ -5,6 +5,7 @@
 > This project was built for Microverse [under these guidance objectives](https://github.com/microverseinc/curriculum-html-css/blob/main/portfolio/1_setup.md) > _note: you can only access this link if you're a Micronault (Microverse Student)_
 
 Additional description about the project and its features.
+![screenshot](./assets/img/Project_screenshot.png)
 
 ## Built With
 
