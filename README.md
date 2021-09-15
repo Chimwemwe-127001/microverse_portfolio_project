@@ -1,9 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Hello Microverse
+# MY PORTFOLIO
 
-> This project was built for Microverse [under these guidance objectives](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/documentation/hello_microverse_project.md)
-> _note: you can only access this link if you're a Micronault (Microverse Student)_
+> This project was built for Microverse [under these guidance objectives](https://github.com/microverseinc/curriculum-html-css/blob/main/portfolio/1_setup.md) > _note: you can only access this link if you're a Micronault (Microverse Student)_
 
 Additional description about the project and its features.
 
