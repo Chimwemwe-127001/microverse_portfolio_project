@@ -1,5 +1,10 @@
 :root {
   --toolbar-height: 48px;
+  --img-plaholder-txt-color: #3a4a42;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -12,6 +17,7 @@ body * {
 }
 
 .toolbar {
+  background: #fff;
   display: flex;
   justify-content: space-between;
   height: var(--toolbar-height);
@@ -21,13 +27,14 @@ body * {
   right: 0;
 }
 
-.toolbar h1 {
+.toolbar a {
   margin: 0;
-  font-style: normal;
   font-weight: 600;
   font-size: 20px;
   padding: 10px 24px;
   text-align: center;
+  text-decoration: none;
+  color: #28352f;
 }
 
 .btn-trigger {
@@ -46,19 +53,21 @@ body * {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 64px 24px;
+  padding-bottom: 15px;
   display: flex;
   flex-direction: column;
 }
 
 .headline h2 {
+  color: #172b4d;
   display: flex;
   justify-content: center;
-  font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
   margin: 0;
   flex-direction: column;
+  text-align: center;
 }
 
 .headline h2 span {
@@ -72,23 +81,188 @@ body * {
 
 .supporting-txt {
   margin: 58px 0;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 440;
   font-size: 20px;
   line-height: 28px;
   color: #172b4d;
   text-align: center;
 }
 
-.social-media-icons {
-  margin-top: 58px;
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.headline ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.to-bottom-btn {
   align-self: center;
-}
-
-.social-media-icons img {
-  margin: 0 10px;
-}
-
-.social-media-icons img:hover {
+  margin-top: 29px;
   cursor: pointer;
+}
+
+.works {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+}
+
+.works h2 {
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  padding-bottom: 22px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+hr {
+  border: 2px solid #36b37e;
+  width: 48px;
+  border-radius: 24px;
+  margin-bottom: 62px;
+}
+
+.img-plaholder {
+  background-color: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+}
+
+.txt-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: 252px;
+  padding-bottom: 24px;
+}
+
+.txt-content h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--img-plaholder-txt-color);
+  padding: 16px;
+}
+
+.txt-content ul {
+  display: block;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.txt-content ul li {
+  display: inline-block;
+  padding: 0 3px;
+  padding: 8px 12px;
+  font-weight: 600;
+  font-size: 0.75em;
+  line-height: 16px;
+  background: #ebf0ee;
+  color: var(--img-plaholder-txt-color);
+  margin: 0 3px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.txt-content a {
+  text-decoration: none;
+  background: #36b37f;
+  border-radius: 4px;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'img-plaholder';
+  row-gap: 24px;
+}
+
+.text {
+  background-image: url(./assets/img/about-me-bg.svg), url(./assets/img/about-me-bg1.svg);
+  background-repeat: no-repeat;
+  background-position: right top, left bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text h2 {
+  padding-top: 64px;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.text p {
+  margin: 0;
+  padding: 24px 12px;
+  color: #172b4d;
+  text-align: center;
+  font-weight: 400;
+}
+
+.text a {
+  text-decoration: none;
+  padding: 12px;
+  background: #36b37f;
+  border-radius: 4px;
+  align-items: center;
+  color: #fff;
+}
+
+.cards {
+  padding: 0 24px;
+  padding-top: 59px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-areas: 'img-plaholder';
+  row-gap: 24px;
+}
+
+.cards .img-plaholder img {
+  padding: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: #fff;
+  box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
+}
+
+.cards .img-plaholder h2 {
+  padding-top: 64px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+}
+
+.cards .img-plaholder ul li {
+  display: inline-block;
+  margin: 0 3px;
+  margin-top: 8px;
+  padding: 12px;
+  color: #36b37e;
+  background-color: #fff;
+  letter-spacing: 0.03em;
+  border-radius: 8px;
 }
