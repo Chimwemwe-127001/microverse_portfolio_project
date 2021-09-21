@@ -316,6 +316,8 @@ form ul li input {
   border-radius: 4px;
   padding: 15px;
   width: 88%;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 form ul li textarea {
@@ -323,6 +325,8 @@ form ul li textarea {
   border: 1px solid #60C095;
   border-radius: 4px;
   width: 90%;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 textarea::placeholder {
