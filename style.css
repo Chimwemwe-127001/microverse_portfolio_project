@@ -123,7 +123,7 @@ ul {
 
 hr {
   border: 2px solid #36b37e;
-  width: 48px;
+  width: 15%;
   border-radius: 24px;
   margin-bottom: 62px;
 }
@@ -265,4 +265,71 @@ hr {
   background-color: #fff;
   letter-spacing: 0.03em;
   border-radius: 8px;
+}
+
+.form h2 {
+  margin: 0;
+  text-align: center;
+  padding: 60px 24px;
+  color: #172B4D;
+}
+
+::placeholder {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background-image: url(./assets/img/illustration-contact-form.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  margin-left: 5px;
+  padding-bottom: 0;
+}
+
+form ul {
+  list-style: none;
+}
+
+form ul li {
+  padding-bottom: 24px;
+  
+}
+
+form ul li input {
+  border: 1px solid #D0D9D4;
+  border-radius: 4px;
+  padding: 15px;
+  width: 88%;
+}
+
+form ul li textarea {
+  padding: 12px;
+  border: 1px solid #60C095;
+  border-radius: 4px;
+  width: 90%;
+}
+
+textarea::placeholder {
+  color: #091E42;
+}
+
+.form-btn {
+  color: #fff;
+  border: none;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  background: #36B37F;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.footer ul li{
+  display: inline-block;
+  padding: 0 10px;
+  margin: 0;
 }
