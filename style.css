@@ -24,12 +24,12 @@ body * {
 :is(button, .btn):hover {
   background-color: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
-  border-radius: 4px;  
+  border-radius: 4px;
 }
 
 :is(button, .btn):active {
   background-color: #008552;
-  color: #fff
+  color: #fff;
 }
 
 button {
@@ -283,6 +283,14 @@ hr {
   align-items: center;
 }
 
+.form h2 {
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 24px 24px 24px;
+  color: #172b4d;
+  max-width: 710px;
+}
+
 .cards .img-plaholder h2 {
   padding-top: 64px;
   font-weight: 600;
@@ -290,6 +298,16 @@ hr {
   line-height: 32px;
   text-align: center;
   color: #344563;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.form form ul li {
+  padding-bottom: 24px;
 }
 
 .cards .img-plaholder ul li {
@@ -301,14 +319,6 @@ hr {
   background-color: #fff;
   letter-spacing: 0.03em;
   border-radius: 8px;
-}
-
-.form h2 {
-  margin: 0 auto;
-  text-align: center;
-  padding: 40px 24px 24px 24px;
-  color: #172B4D;
-  max-width: 710px;
 }
 
 ::placeholder {
@@ -327,17 +337,12 @@ hr {
   padding-bottom: 0;
 }
 
-form ul {
+.form form ul {
   list-style: none;
 }
 
-form ul li {
-  padding-bottom: 24px;
-  
-}
-
-form ul li input {
-  border: 1px solid #D0D9D4;
+.form form ul li input {
+  border: 1px solid #d0d9d4;
   border-radius: 4px;
   padding: 15px;
   width: 88%;
@@ -345,9 +350,9 @@ form ul li input {
   line-height: 24px;
 }
 
-form ul li textarea {
+.form form ul li textarea {
   padding: 12px;
-  border: 1px solid #60C095;
+  border: 1px solid #60c095;
   border-radius: 4px;
   width: 90%;
   font-size: 15px;
@@ -356,7 +361,7 @@ form ul li textarea {
 }
 
 textarea::placeholder {
-  color: #091E42;
+  color: #091e42;
 }
 
 .form-btn {
@@ -365,23 +370,17 @@ textarea::placeholder {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  background: #36B37F;
+  background: #36b37f;
   border-radius: 4px;
   padding: 12px;
 }
 
-.footer ul li{
-  display: inline-block;
-  padding: 0 10px;
-  margin: 0;
-}
-
-footer {
+.footer {
   display: flex;
   justify-content: center;
 }
 
-footer a {
+.footer a {
   display: inline-block;
   font-size: 20px;
   line-height: 32px;
