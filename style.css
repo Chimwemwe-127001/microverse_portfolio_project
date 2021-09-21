@@ -80,12 +80,13 @@ body * {
 }
 
 .supporting-txt {
-  margin: 58px 0;
+  margin: 58px auto;
   font-weight: 440;
   font-size: 20px;
   line-height: 28px;
   color: #172b4d;
   text-align: center;
+  max-width: 900px;
 }
 
 ul {
@@ -103,6 +104,8 @@ ul {
   align-self: center;
   margin-top: 29px;
   cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .works {
@@ -213,7 +216,8 @@ hr {
 }
 
 .text p {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 750px;
   padding: 24px 12px;
   color: #172b4d;
   text-align: center;
@@ -280,10 +284,11 @@ hr {
 }
 
 .form h2 {
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
   padding: 40px 24px 24px 24px;
   color: #172B4D;
+  max-width: 710px;
 }
 
 ::placeholder {
@@ -327,6 +332,7 @@ form ul li textarea {
   width: 90%;
   font-size: 15px;
   line-height: 24px;
+  max-width: 90%;
 }
 
 textarea::placeholder {
