@@ -4,7 +4,11 @@
 
 > This project was built for Microverse [under these guidance objectives](https://github.com/microverseinc/curriculum-html-css/blob/main/portfolio/1_setup.md) > _note: you can only access this link if you're a Micronault (Microverse Student)_
 
+## Live Demo
+>   You can access the live demo of this repo [here](https://chimwemwe-127001.github.io/microverse_portfolio_project/)
+
 ![screenshot](./assets/img/Project_screenshot.png)
+![screenshot](./assets/img/Project_screenshot2.png)
 
 ## How to Setup
 > You can simply clone or download [this repository](https://github.com/Chimwemwe-127001/microverse_portfolio_project), and use your favoright browser or code editor to run this program.
