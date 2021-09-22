@@ -413,11 +413,21 @@ textarea::placeholder {
   .toolbar__2 {
     display: none;
   }
-}
 
-@media (max-width: 900px) {
   .hr2 {
     display: none;
+  }
+}
+
+@media (min-width: 1412px) {
+  body {
+    background-image: url(./assets/img/Frame.svg), url(./assets/img/Frame1.svg), url(./assets/img/illustration-2-contact-form-desktop.svg);
+    background-position: 0 calc(100% - 70px), right calc(100% - 86px), 300px calc(100% - 86px);
+    background-repeat: no-repeat;
+  }
+
+  .form {
+    background: none;
   }
 }
 
@@ -502,18 +512,6 @@ textarea::placeholder {
     flex-shrink: 1;
     font-size: 30px;
     line-height: 52px;
-  }
-}
-
-@media (min-width: 1412px) {
-  body {
-    background-image: url(./assets/img/Frame.svg), url(./assets/img/Frame1.svg), url(./assets/img/illustration-2-contact-form-desktop.svg);
-    background-position: 0 calc(100% - 70px), right calc(100% - 86px), 300px calc(100% - 86px);
-    background-repeat: no-repeat;
-  }
-
-  .form {
-    background: none;
   }
 }
 
