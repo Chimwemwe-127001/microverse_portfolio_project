@@ -415,6 +415,12 @@ textarea::placeholder {
   }
 }
 
+@media (max-width: 900px) {
+  .hr2 {
+    display: none;
+  }
+}
+
 @media (min-width: 900px) {
   :root {
     --toolbar-height: 72px;
