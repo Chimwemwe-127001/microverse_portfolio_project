@@ -278,7 +278,7 @@ ul {
 }
 
 .cards > * {
-  flex-basis: 420px;
+  flex-basis: 367px;
   flex-shrink: 1;
 }
 
@@ -360,7 +360,7 @@ ul {
 }
 
 .form form {
-  flex-basis: 50%;
+  flex-basis: 40%;
   flex-grow: 1;
 }
 
@@ -416,18 +416,6 @@ textarea::placeholder {
 
   .hr2 {
     display: none;
-  }
-}
-
-@media (min-width: 1412px) {
-  body {
-    background-image: url(./assets/img/Frame.svg), url(./assets/img/Frame1.svg), url(./assets/img/illustration-2-contact-form-desktop.svg);
-    background-position: 0 calc(100% - 70px), right calc(100% - 86px), 300px calc(100% - 86px);
-    background-repeat: no-repeat;
-  }
-
-  .form {
-    background: none;
   }
 }
 
@@ -513,6 +501,10 @@ textarea::placeholder {
     font-size: 30px;
     line-height: 52px;
   }
+
+  .form form {
+    max-width: 600px;
+  }
 }
 
 @media (min-width: 730px) {
@@ -523,6 +515,16 @@ textarea::placeholder {
 }
 
 @media (min-width: 1000px) {
+  body {
+    background-image: url(./assets/img/Frame.svg), url(./assets/img/Frame1.svg), url(./assets/img/illustration-2-contact-form-desktop.svg);
+    background-position: 0 calc(100% - 70px), right calc(100% - 86px), 300px calc(100% - 86px);
+    background-repeat: no-repeat;
+  }
+
+  .form {
+    background: none;
+  }
+
   .grid-container {
     grid-template-areas: 'imgplaholder imgplaholder imgplaholder';
     column-gap: 40px;
