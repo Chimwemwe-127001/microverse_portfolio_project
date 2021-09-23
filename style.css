@@ -414,6 +414,10 @@ textarea::placeholder {
     display: none;
   }
 
+  #msg2 {
+    display: none;
+  }
+
   .hr2 {
     display: none;
   }
@@ -425,6 +429,10 @@ textarea::placeholder {
   }
 
   :is(.welcome, .btn-trigger) {
+    display: none;
+  }
+
+  #msg1 {
     display: none;
   }
 
