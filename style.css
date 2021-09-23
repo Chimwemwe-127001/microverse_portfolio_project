@@ -28,8 +28,13 @@ body * {
 }
 
 :is(button, .btn):active {
+  animation: btn 0.1s linear 1;
   background-color: #008552;
   color: #fff;
+}
+
+@keyframes btn {
+  50% { transform: scale(0.8); }
 }
 
 button {
@@ -520,6 +525,14 @@ textarea::placeholder {
 
   .form form {
     max-width: 600px;
+  }
+
+  .pop:hover {
+    animation: pop 0.3s linear 1;
+  }
+
+  @keyframes pop {
+    50% { transform: scale(1.5); }
   }
 }
 
