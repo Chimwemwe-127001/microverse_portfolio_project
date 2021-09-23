@@ -47,6 +47,14 @@ button {
   right: 0;
 }
 
+footer a {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+  text-decoration: none;
+}
+
 .toolbar a {
   margin: 0;
   font-weight: 600;
@@ -71,6 +79,7 @@ button {
   margin-top: var(--toolbar-height);
   background-image: url(./assets/img/bg-image.png);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   padding: 64px 24px;
   padding-bottom: 15px;
@@ -106,7 +115,7 @@ button {
   line-height: 28px;
   color: #172b4d;
   text-align: center;
-  max-width: 900px;
+  max-width: 822px;
 }
 
 ul {
@@ -144,7 +153,7 @@ ul {
   text-align: center;
 }
 
-hr {
+.hr {
   border: 2px solid #36b37e;
   width: 15%;
   border-radius: 24px;
@@ -214,6 +223,11 @@ hr {
   display: grid;
   grid-template-areas: 'img-plaholder';
   row-gap: 24px;
+  justify-content: center;
+}
+
+.grid-container .img-plaholder {
+  width: 100%;
 }
 
 .text {
@@ -257,9 +271,15 @@ hr {
   padding: 0 24px;
   padding-top: 59px;
   margin-bottom: 30px;
-  display: grid;
-  grid-template-areas: 'img-plaholder';
-  row-gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.cards > * {
+  flex-basis: 367px;
+  flex-shrink: 1;
 }
 
 .placeholder-icon {
@@ -284,7 +304,6 @@ hr {
 }
 
 .form h2 {
-  margin: 0 auto;
   text-align: center;
   padding: 40px 24px 24px 24px;
   color: #172b4d;
@@ -328,13 +347,21 @@ hr {
 
 .form {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 24px;
   background-image: url(./assets/img/illustration-contact-form.svg);
   background-repeat: no-repeat;
   background-position: bottom right;
-  margin-left: 5px;
-  padding-bottom: 0;
+  margin: 0 auto;
+  padding-bottom: 170px;
+  gap: 2em;
+  max-width: 1340px;
+}
+
+.form form {
+  flex-basis: 40%;
+  flex-grow: 1;
 }
 
 .form form ul {
@@ -354,10 +381,10 @@ hr {
   padding: 12px;
   border: 1px solid #60c095;
   border-radius: 4px;
-  width: 90%;
+  width: 88%;
   font-size: 15px;
   line-height: 24px;
-  max-width: 90%;
+  max-width: 88%;
 }
 
 textarea::placeholder {
@@ -365,6 +392,7 @@ textarea::placeholder {
 }
 
 .form-btn {
+  display: block;
   color: #fff;
   border: none;
   font-weight: 500;
@@ -373,6 +401,7 @@ textarea::placeholder {
   background: #36b37f;
   border-radius: 4px;
   padding: 12px;
+  margin: 0 auto;
 }
 
 .footer {
@@ -380,11 +409,154 @@ textarea::placeholder {
   justify-content: center;
 }
 
-.footer a {
-  display: inline-block;
-  font-size: 20px;
-  line-height: 32px;
-  color: #42526e;
-  text-decoration: none;
-  margin-bottom: 30px;
+@media (max-width: 900px) {
+  .toolbar__2 {
+    display: none;
+  }
+
+  #msg2 {
+    display: none;
+  }
+
+  .hr2 {
+    display: none;
+  }
+}
+
+@media (min-width: 900px) {
+  :root {
+    --toolbar-height: 72px;
+  }
+
+  :is(.welcome, .btn-trigger) {
+    display: none;
+  }
+
+  #msg1 {
+    display: none;
+  }
+
+  .form-btn {
+    margin-left: 22px;
+  }
+
+  .works h2 {
+    padding: 40px;
+  }
+
+  .works br {
+    display: none;
+  }
+
+  .hr {
+    display: none;
+  }
+
+  .toolbar {
+    background: transparent;
+  }
+
+  footer a {
+    display: none;
+  }
+
+  .toolbar__2 {
+    margin: 0 auto;
+    padding-block: 16px;
+  }
+
+  .toolbar__2 a {
+    padding: 10px 12px;
+    color: #344563;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .headline {
+    background-image: url(./assets/img/Header-llustration-desktop.svg);
+    background-size: cover;
+    padding-top: 220px;
+    padding-bottom: 24px;
+    margin-top: 0;
+  }
+
+  .headline h2 {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+    color: #172b4d;
+  }
+
+  .supporting-txt {
+    font-size: 20px;
+    line-height: 32px;
+    padding-block: 24px;
+    margin: 0 auto;
+  }
+
+  .to-bottom-btn {
+    margin-bottom: 350px;
+  }
+
+  .text h2 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .text p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .form h2 {
+    padding-top: 40px;
+    flex-basis: 30%;
+    flex-shrink: 1;
+    font-size: 30px;
+    line-height: 52px;
+  }
+
+  .form form {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 730px) {
+  .grid-container {
+    grid-template-areas: 'imgplaholder imgplaholder';
+    column-gap: 34px;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    background-image: url(./assets/img/Frame.svg), url(./assets/img/Frame1.svg), url(./assets/img/illustration-2-contact-form-desktop.svg);
+    background-position: 0 calc(100% - 70px), right calc(100% - 86px), 300px calc(100% - 86px);
+    background-repeat: no-repeat;
+  }
+
+  .form {
+    background: none;
+  }
+
+  .grid-container {
+    grid-template-areas: 'imgplaholder imgplaholder imgplaholder';
+    column-gap: 40px;
+  }
+
+  .text {
+    background-image: url(./assets/img/illustration-about-me-1-desktop.svg), url(./assets/img/illustration-about-me-2-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top right, bottom left;
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .grid-container .img-plaholder {
+    width: 420px;
+    min-width: 390px;
+  }
 }

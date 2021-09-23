@@ -9,9 +9,14 @@
   </head>
   <body>
     <header class="toolbar">
-      <a href="#">Welcome</a>
+      <a class="welcome" href="#">Welcome</a>
       <nav class="btn-trigger">
         <img src="./assets/img/union.svg" alt="button"/>
+      </nav>
+      <nav class="toolbar__2">
+        <a href="#">Portfolio</a>
+        <a href="#About">About</a>
+        <a href="#form">Contact</a>
       </nav>
     </header>
     <section class="headline">
@@ -45,9 +50,8 @@
       </span>
     </section>
     <section class="works" id="recent_works">
-      <h2>My Recent<br>Works</h2>
-      <hr>
-        
+      <h2>My Recent <br>Works</h2>
+      <hr class="hr">
         <div class="grid-container">
           <div class="img-plaholder">
             <div class="txt-content">
@@ -123,7 +127,7 @@
           </div>
         </div>
     </section>
-    <section class="about-me">
+    <section class="about-me" id="About">
       <div class="text">
         <h2>About me</h2>
       <p> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
@@ -165,7 +169,7 @@
         </div>
       </div>
     </section>
-    <section class="form">
+    <section class="form" id="form">
       <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
         <form action="https://formspree.io/f/xdoybwep" method="POST">
           <ul>
@@ -176,33 +180,35 @@
               <input type="email" id="mail" name="user_email" placeholder="Email address" required/>
             </li>
             <li>
-              <textarea id="msg" name="user_message" placeholder="Enter text here" maxlength="500" rows="5" required></textarea>
+              <textarea id="msg1" name="user_message" placeholder="Enter text here" maxlength="500" rows="4" required></textarea>
+              <textarea id="msg2" name="user_message" placeholder="Type something" maxlength="500" rows="4" required></textarea>
             </li>
             <li>
               <button class="form-btn" type="submit">Get in touch</button>
             </li>
           </ul>
         </form>
-        <div class="footer">
-          <ul>
-            <li>
-              <a href="#"><img src="./assets/img/twitter.svg" alt="twitter svg"></a>
-            </li>
-            <li>
-              <a href="#"><img src="./assets/img/Linkedin.svg" alt="Linkedin svg"></a>
-            </li>
-            <li>
-              <a href="#"><img src="./assets/img/medium.svg" alt="medium svg"></a>
-            </li>
-            <li>
-              <a href="https://github.com/Chimwemwe-127001"><img src="./assets/img/github.svg" alt="github svg"></a>
-            </li>
-            <li>
-              <a href="#"><img src="./assets/img/angellist.svg" alt="angellist svg"></a>
-            </li>
-          </ul>
-        </div>
     </section>
+    <hr class="hr2">
+    <div class="footer">
+      <ul>
+        <li>
+          <a href="#"><img src="./assets/img/twitter.svg" alt="twitter svg"></a>
+        </li>
+        <li>
+          <a href="#"><img src="./assets/img/Linkedin.svg" alt="Linkedin svg"></a>
+        </li>
+        <li>
+          <a href="#"><img src="./assets/img/medium.svg" alt="medium svg"></a>
+        </li>
+        <li>
+          <a href="https://github.com/Chimwemwe-127001"><img src="./assets/img/github.svg" alt="github svg"></a>
+        </li>
+        <li>
+          <a href="#"><img src="./assets/img/angellist.svg" alt="angellist svg"></a>
+        </li>
+      </ul>
+    </div>
     <footer class="footer">
       <a href="#">sinyinzachimwemwe@gmail.com</a>
     </footer>
