@@ -459,6 +459,10 @@ textarea::placeholder {
 
   .toolbar__2 a {
     padding: 10px 12px;
+    color: #344563;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
   }
 
   .headline {
