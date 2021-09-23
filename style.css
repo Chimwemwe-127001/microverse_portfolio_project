@@ -401,7 +401,7 @@ textarea::placeholder {
   background: #36b37f;
   border-radius: 4px;
   padding: 12px;
-  margin-left: 35px;
+  margin: 0 auto;
 }
 
 .footer {
@@ -426,6 +426,10 @@ textarea::placeholder {
 
   :is(.welcome, .btn-trigger) {
     display: none;
+  }
+
+  .form-btn {
+    margin-left: 22px;
   }
 
   .works h2 {
