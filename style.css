@@ -162,7 +162,7 @@ ul {
   padding: 0 24px;
 }
 
-.works h3 {
+.works h2 {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
@@ -184,14 +184,22 @@ ul {
   border-radius: 8px;
 }
 
+.img-plaholder img {
+  width: 100%;
+  height: 252px;
+  z-index: 1;
+}
+
 .txt-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #fff;
   border-radius: 8px;
-  margin-top: 252px;
   padding-bottom: 24px;
+  height: calc(474px - 252px);
+  margin-top: -8px;
+  z-index: 2;
 }
 
 .txt-content h3 {
@@ -246,6 +254,7 @@ ul {
 
 .grid-container .img-plaholder {
   width: 100%;
+  min-height: 474px;
 }
 
 .text {
@@ -487,7 +496,7 @@ textarea::placeholder {
     margin-left: 22px;
   }
 
-  .works h3 {
+  .works h2 {
     padding: 40px;
   }
 
