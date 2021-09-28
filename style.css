@@ -94,6 +94,7 @@ footer a {
   flex-direction: column;
 }
 
+.headline h1,
 .headline h2 {
   color: #172b4d;
   display: flex;
@@ -161,7 +162,7 @@ ul {
   padding: 0 24px;
 }
 
-.works h2 {
+.works h3 {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
@@ -193,7 +194,7 @@ ul {
   padding-bottom: 24px;
 }
 
-.txt-content h2 {
+.txt-content h3 {
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -327,7 +328,7 @@ ul {
   max-width: 710px;
 }
 
-.cards .img-plaholder h2 {
+.cards .img-plaholder h3 {
   padding-top: 64px;
   font-weight: 600;
   font-size: 24px;
@@ -445,14 +446,14 @@ textarea::placeholder {
     display: none;
   }
 
-  .h2-anime {
+  .h1-anime {
     align-self: center;
     position: relative;
     width: max-content;
   }
 
-  .h2-anime::before,
-  .h2-anime::after {
+  .h1-anime::before,
+  .h1-anime::after {
     content: '';
     position: absolute;
     top: 0;
@@ -461,12 +462,12 @@ textarea::placeholder {
     bottom: 0;
   }
 
-  .headline h2::before {
+  .headline h1::before {
     background: #fff;
     animation: typewriter 6s steps(25) 1s forwards;
   }
 
-  .h2-anime::after {
+  .h1-anime::after {
     width: 0.125em;
     background: #172b4d;
     animation: typewriter 6s steps(25) 1s forwards, blink 750ms steps(24) infinite;
@@ -486,7 +487,7 @@ textarea::placeholder {
     margin-left: 22px;
   }
 
-  .works h2 {
+  .works h3 {
     padding: 40px;
   }
 
@@ -527,7 +528,7 @@ textarea::placeholder {
     margin-top: 0;
   }
 
-  .headline h2 {
+  .headline h1 {
     font-family: 'Source Code Pro', monospace;
     font-size: 48px;
     line-height: 60px;
