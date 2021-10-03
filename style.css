@@ -182,11 +182,12 @@ ul {
   background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
+  width: fit-content;
 }
 
 .img-plaholder img {
   width: 100%;
-  height: 252px;
+  height: 270px;
   z-index: 1;
 }
 
@@ -197,7 +198,7 @@ ul {
   background-color: #fff;
   border-radius: 8px;
   padding-bottom: 24px;
-  height: calc(474px - 252px);
+  height: fit-content;
   margin-top: -8px;
   z-index: 2;
 }
@@ -208,6 +209,7 @@ ul {
   line-height: 32px;
   color: var(--img-plaholder-txt-color);
   padding: 16px;
+  text-align: center;
 }
 
 .txt-content ul {
