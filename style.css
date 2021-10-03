@@ -326,6 +326,11 @@ ul {
   box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
 }
 
+.cards .img-plaholder .placeholder-icon img {
+  width: 40px;
+  height: 40px;
+}
+
 .cards .img-plaholder {
   display: flex;
   flex-direction: column;
