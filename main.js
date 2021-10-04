@@ -23,3 +23,7 @@ function toggleNavShow(){
 document.getElementById('btn-trigger').onclick = function() {
     toggleNavShow();
 }
+
+window.addEventListener('hashchange', function(){
+    toggleNavShow();
+});
