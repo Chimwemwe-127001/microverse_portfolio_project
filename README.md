@@ -34,11 +34,19 @@ code .
 👤 **Chimwemwe Sinyinza**
 
 - GitHub: [@Chimwemwe-127001](https://github.com/Chimwemwe-127001)
-- Twitter: [@chimwewme](https://twitter.com/chimwewme)
+- Twitter: [@chimwemwe](https://twitter.com/chimwemwe)
 
 👤 **Awoyemi Femi**
 
 - GitHub: [@phelian23](https://github.com/phelian23)
+
+👤 **Nashaat Shahier**
+
+- GitHub: [@ShahierNashaat](https://github.com/ShahierNashaat)
+
+👤 **Ricky Mormor**
+
+- GitHub: [@cwaku](https://github.com/cwaku)
 
 ## 🤝 Contributing
 
