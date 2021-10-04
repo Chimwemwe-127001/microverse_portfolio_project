@@ -7,24 +7,24 @@ const works = document.querySelector('.works');
 const About = document.querySelector('.about-me');
 const form = document.querySelector('.form');
 const footer = document.querySelector('.footer');
-let trigger = document.getElementById('btn-trigger');
+const trigger = document.getElementById('btn-trigger');
 
 function toggleNavShow() {
-	toolbar.classList.toggle('show');
-	topCross.classList.toggle('cross');
-	middleCross.classList.toggle('cross');
-	bottomCross.classList.toggle('disappear');
-	headline.classList.toggle('blur');
-	works.classList.toggle('blur');
-	About.classList.toggle('blur');
-	form.classList.toggle('blur');
-	footer.classList.toggle('blur');
+ 	toolbar.classList.toggle('show');
+ 	topCross.classList.toggle('cross');
+ 	middleCross.classList.toggle('cross');
+ 	bottomCross.classList.toggle('disappear');
+ 	headline.classList.toggle('blur');
+ 	works.classList.toggle('blur');
+ 	About.classList.toggle('blur');
+ 	form.classList.toggle('blur');
+ 	footer.classList.toggle('blur');
 }
 
-trigger.addEventListener('click', function() {
-	toggleNavShow();
+trigger.addEventListener('click', () => {
+ 	toggleNavShow();
 });
 
-window.addEventListener('hashchange', function() {
-	toggleNavShow();
+window.addEventListener('hashchange', () => {
+ 	toggleNavShow();
 });
