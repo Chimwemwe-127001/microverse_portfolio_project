@@ -34,7 +34,7 @@ code .
 👤 **Chimwemwe Sinyinza**
 
 - GitHub: [@Chimwemwe-127001](https://github.com/Chimwemwe-127001)
-- Twitter: [@chimwemwe](https://twitter.com/chimwemwe)
+- Twitter: [@chimwewme](https://twitter.com/chimwemwe)
 
 👤 **Awoyemi Femi**
 
