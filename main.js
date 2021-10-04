@@ -10,21 +10,21 @@ const footer = document.querySelector('.footer');
 const trigger = document.getElementById('btn-trigger');
 
 function toggleNavShow() {
- 	toolbar.classList.toggle('show');
- 	topCross.classList.toggle('cross');
- 	middleCross.classList.toggle('cross');
- 	bottomCross.classList.toggle('disappear');
- 	headline.classList.toggle('blur');
- 	works.classList.toggle('blur');
- 	About.classList.toggle('blur');
- 	form.classList.toggle('blur');
- 	footer.classList.toggle('blur');
+  toolbar.classList.toggle('show');
+  topCross.classList.toggle('cross');
+  middleCross.classList.toggle('cross');
+  bottomCross.classList.toggle('disappear');
+  headline.classList.toggle('blur');
+  works.classList.toggle('blur');
+  About.classList.toggle('blur');
+  form.classList.toggle('blur');
+  footer.classList.toggle('blur');
 }
 
 trigger.addEventListener('click', () => {
- 	toggleNavShow();
+  toggleNavShow();
 });
 
 window.addEventListener('hashchange', () => {
- 	toggleNavShow();
+  toggleNavShow();
 });
