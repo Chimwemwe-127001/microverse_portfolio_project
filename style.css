@@ -154,6 +154,7 @@ ul {
 .to-bottom-btn {
   align-self: center;
   margin-top: 29px;
+  margin-bottom: 70px;
   cursor: pointer;
   user-select: none;
   -webkit-user-select: none;
@@ -173,6 +174,7 @@ ul {
   padding-bottom: 22px;
   margin: 0 auto;
   text-align: center;
+  margin-top: 50px;
 }
 
 .hr {
@@ -529,6 +531,10 @@ textarea::placeholder {
 
   .toolbar__2 a {
     display: block;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: #3a4a42;
   }
 
   .hr2 {
