@@ -608,18 +608,18 @@ textarea::placeholder {
     border-radius: 4px;
   }
 
+  .pop-up p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
+
   .pop-up ul li p {
     margin: 0;
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
     color: #3a4a42;
-  }
-
-  .pop-up p {
-    font-size: 16px;
-    line-height: 24px;
-    color: #344563;
   }
 
   .pop-up .btns {
@@ -708,6 +708,13 @@ textarea::placeholder {
     height: auto;
   }
 
+  .headline h1 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+  }
+
   .pop-up .btnsh1 {
     display: flex;
     width: 100%;
@@ -734,7 +741,7 @@ textarea::placeholder {
     display: block;
     margin: 0;
   }
-  
+
   .pop-up ul li {
     display: inline-block;
     padding: 8px 12px;
@@ -862,13 +869,6 @@ textarea::placeholder {
     padding-top: 220px;
     padding-bottom: 24px;
     margin-top: 0;
-  }
-
-  .headline h1 {
-    font-family: 'Source Code Pro', monospace;
-    font-size: 48px;
-    line-height: 60px;
-    letter-spacing: 0.37px;
   }
 
   .supporting-txt {
