@@ -26,13 +26,13 @@ trigger.addEventListener('click', () => {
 });
 
 window.addEventListener('hashchange', () => {
-    toggleNavShow();
+  toggleNavShow();
 });
 
 const formdata = document.querySelector('.form-data');
 const mail = document.getElementById('mail');
 const errorMessage = document.querySelector('.error-message');
- 
+
 formdata.addEventListener('submit', (e) => {
   if (mail.value === mail.value.toLowerCase()) {
     errorMessage.textContent = '';
@@ -41,4 +41,3 @@ formdata.addEventListener('submit', (e) => {
     errorMessage.innerHTML = '** FORM NOT SENT <br> ** Email must be in <strong>lowercase</strong> ';
   }
 });
-
