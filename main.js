@@ -98,7 +98,7 @@ function displayPopup() {
   }
 
   return popupTemplate;
-};
+}
 
 function toggleNavShow() {
   toolbar.classList.toggle('show');
@@ -126,40 +126,45 @@ popupTriggers.forEach((project) => {
     popupWindow.innerHTML = displayPopup();
     const popupClose = document.querySelector('.close');
     const popupCloseD = document.querySelector('.closeD');
-    popupClose ? popupClose.addEventListener('click', () => {
-      popupWindow.innerHTML = displayPopup();
-      popupWindow.classList.toggle('showpopup');
-      popupClose.classList.toggle('showpopup');
-      headline.classList.toggle('blur');
-      works.classList.toggle('blur');
-      About.classList.toggle('blur');
-      form.classList.toggle('blur');
-      footer.classList.toggle('blur');
-      toolbar.classList.toggle('blur');
-      hideScrollBar.classList.toggle('hide-scrollbar');
-    }) : null;
-    popupCloseD ? popupCloseD.addEventListener('click', () => {
-      popupWindow.innerHTML = displayPopup();
-      popupWindow.classList.toggle('showpopup');
-      popupCloseD.classList.toggle('showpopup');
-      headline.classList.toggle('blur');
-      works.classList.toggle('blur');
-      About.classList.toggle('blur');
-      form.classList.toggle('blur');
-      footer.classList.toggle('blur');
-      toolbar.classList.toggle('blur');
-      hideScrollBar.classList.toggle('hide-scrollbar');
-    }) : null;
-    popupWindow ? popupWindow.classList.toggle('showpopup') : null;
-    popupClose ? popupClose.classList.toggle('showpopup') : null;
-    popupCloseD ? popupCloseD.classList.toggle('showpopup') : null;
-    headline ? headline.classList.toggle('blur') : null;
-    works ? works.classList.toggle('blur') : null;
-    About ? About.classList.toggle('blur') : null;
-    form ? form.classList.toggle('blur') : null;
-    footer ? footer.classList.toggle('blur') : null;
-    toolbar ? toolbar.classList.toggle('blur') : null;
-    hideScrollBar ? hideScrollBar.classList.toggle('hide-scrollbar') : null;
+    if (popupClose) {
+      popupClose.addEventListener('click', () => {
+        popupWindow.innerHTML = displayPopup();
+        popupWindow.classList.toggle('showpopup');
+        popupClose.classList.toggle('showpopup');
+        headline.classList.toggle('blur');
+        works.classList.toggle('blur');
+        About.classList.toggle('blur');
+        form.classList.toggle('blur');
+        footer.classList.toggle('blur');
+        toolbar.classList.toggle('blur');
+        hideScrollBar.classList.toggle('hide-scrollbar');
+      });
+    }
+    if (popupCloseD) {
+      popupCloseD.addEventListener('click', () => {
+        popupWindow.innerHTML = displayPopup();
+        popupWindow.classList.toggle('showpopup');
+        popupCloseD.classList.toggle('showpopup');
+        headline.classList.toggle('blur');
+        works.classList.toggle('blur');
+        About.classList.toggle('blur');
+        form.classList.toggle('blur');
+        footer.classList.toggle('blur');
+        toolbar.classList.toggle('blur');
+        hideScrollBar.classList.toggle('hide-scrollbar');
+      });
+    }
+
+    popupWindow.classList.toggle('showpopup') && popupWindow;
+    popupClose.classList.toggle('showpopup') && popupClose;
+    popupCloseD.classList.toggle('showpopup') && popupCloseD;
+    headline.classList.toggle('blur') && headline;
+    works.classList.toggle('blur') && works;
+    About.classList.toggle('blur') && About;
+    form.classList.toggle('blur') && form;
+    footer.classList.toggle('blur') && footer;
+    toolbar.classList.toggle('blur') && toolbar;
+    hideScrollBar.classList.toggle('hide-scrollbar') && hideScrollBar;
   });
 });
 
