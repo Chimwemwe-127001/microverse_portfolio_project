@@ -406,6 +406,12 @@ ul {
   list-style: none;
 }
 
+.form form .error-message {
+  text-align: start;
+  padding-left: 5px;
+  color: #fd2e09;
+}
+
 .form form ul li input {
   border: 1px solid #d0d9d4;
   border-radius: 4px;
