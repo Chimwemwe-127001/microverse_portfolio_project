@@ -417,7 +417,7 @@ ul {
 
 .form form .error-message {
   text-align: start;
-  padding-left: 5px;
+  padding-left: 27px;
   color: #fd2e09;
   transition: ease-in-out 0.6s;
 }
@@ -607,7 +607,7 @@ textarea::placeholder {
     display: block;
     margin: 0;
   }
-  
+
   .pop-up ul li {
     display: inline-block;
     padding: 8px 12px;
@@ -620,7 +620,7 @@ textarea::placeholder {
     margin-bottom: 8px;
     border-radius: 4px;
   }
-  
+
   .pop-up ul li p {
     margin: 0;
     font-weight: 600;
@@ -674,7 +674,12 @@ textarea::placeholder {
     filter: blur(5px);
     background: rgba(213, 211, 208, 0.39);
   }
-  
+
+  .headline h1::before {
+    background: #fff;
+    animation: typewriter 6s steps(25) 1s forwards;
+  }
+
   .closeD {
     margin-bottom: 4px;
     align-self: flex-end;
@@ -704,8 +709,8 @@ textarea::placeholder {
     overflow-y: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    border: 1px solid #EBECF0;
-    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 8px;
   }
 
@@ -761,19 +766,24 @@ textarea::placeholder {
     margin-bottom: 8px;
     border-radius: 4px;
   }
-  
+
+  .pop-up p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .text p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
   .pop-up ul li p {
     margin: 0;
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.03em;
-    color: #344563;
-  }
-
-  .pop-up p {
-    font-size: 16px;
-    line-height: 24px;
     color: #344563;
   }
 
@@ -810,11 +820,6 @@ textarea::placeholder {
     right: 0;
     left: 0;
     bottom: 0;
-  }
-
-  .headline h1::before {
-    background: #fff;
-    animation: typewriter 6s steps(25) 1s forwards;
   }
 
   .h1-anime::after {
@@ -899,11 +904,6 @@ textarea::placeholder {
   .text h2 {
     font-size: 40px;
     line-height: 52px;
-  }
-
-  .text p {
-    font-size: 20px;
-    line-height: 32px;
   }
 
   .form h2 {
