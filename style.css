@@ -5,15 +5,6 @@
   --img-plaholder-txt-color: #3a4a42;
 }
 
-::-webkit-scrollbar-track {
-  width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #36b37f;
-  border-radius: 100vw;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -560,11 +551,6 @@ textarea::placeholder {
     right: 30px;
     height: 21px;
     width: 21px;
-    display: none;
-  }
-
-  .close.showpopup {
-    display: block;
   }
 
   .pop-up {
@@ -574,11 +560,12 @@ textarea::placeholder {
     align-items: center;
     position: fixed;
     top: 0;
-    right: 100%;
+    right: 0;
     bottom: 0;
+    opacity: 0;
     margin: 0 auto;
     margin-top: 10px;
-    transition: all 0.4s;
+    transition: opacity 0.4s ease;
     background: #fff;
     z-index: 99999;
     overflow-y: auto;
@@ -587,7 +574,7 @@ textarea::placeholder {
   }
 
   .pop-up.showpopup {
-    right: 0;
+    opacity: 1;
   }
 
   .pop-up .mobile {
@@ -680,16 +667,11 @@ textarea::placeholder {
     animation: typewriter 6s steps(25) 1s forwards;
   }
 
-  .closeD {
+  .close {
     margin-bottom: 4px;
     align-self: flex-end;
     height: 39px;
     width: 39px;
-    display: none;
-  }
-
-  .closeD.showpopup {
-    display: block;
   }
 
   .pop-up {
@@ -700,12 +682,14 @@ textarea::placeholder {
     align-items: center;
     position: fixed;
     left: -100%;
+    top: 25px;
+    bottom: 25px;
     margin: 0 auto;
-    width: 80%;
+    width: 85%;
     margin-top: 10px;
-    transition: all 0.6s;
+    transition: all 0.6s ease;
     background: #fff;
-    z-index: 99999;
+    z-index: 9999;
     overflow-y: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -715,11 +699,8 @@ textarea::placeholder {
   }
 
   .pop-up.showpopup {
-    margin: 0 auto;
     right: 0;
     left: 0;
-    top: 25px;
-    bottom: 25px;
   }
 
   .pop-up .desktop {

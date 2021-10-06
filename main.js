@@ -75,7 +75,7 @@ function displayPopup() {
     `;
   } else {
     popupTemplate = `
-    <img class="closeD" src="./assets/img/desktop_modal_close.svg" alt="">
+    <img class="close" src="./assets/img/desktop_modal_close.svg" alt="">
     <img class="desktop" src="./assets/img/Snapshoot_Portfolio_desktop.png" alt="">
     <div class="btnsh1">
       <h1>${modal.name}</h1>
@@ -124,47 +124,35 @@ popupTriggers.forEach((project) => {
   project.addEventListener('click', (e) => {
     e.preventDefault();
     popupWindow.innerHTML = displayPopup();
+    popupWindow.classList.add('showpopup');
+    headline.classList.add('blur');
+    works.classList.add('blur');
+    About.classList.add('blur');
+    form.classList.add('blur');
+    footer.classList.add('blur');
+    toolbar.classList.add('blur');
+    hideScrollBar.classList.add('hide-scrollbar');
     const popupClose = document.querySelector('.close');
-    const popupCloseD = document.querySelector('.closeD');
-    if (popupClose) {
-      popupClose.addEventListener('click', () => {
-        popupWindow.innerHTML = displayPopup();
-        popupWindow.classList.toggle('showpopup');
-        popupClose.classList.toggle('showpopup');
-        headline.classList.toggle('blur');
-        works.classList.toggle('blur');
-        About.classList.toggle('blur');
-        form.classList.toggle('blur');
-        footer.classList.toggle('blur');
-        toolbar.classList.toggle('blur');
-        hideScrollBar.classList.toggle('hide-scrollbar');
-      });
-    }
-    if (popupCloseD) {
-      popupCloseD.addEventListener('click', () => {
-        popupWindow.innerHTML = displayPopup();
-        popupWindow.classList.toggle('showpopup');
-        popupCloseD.classList.toggle('showpopup');
-        headline.classList.toggle('blur');
-        works.classList.toggle('blur');
-        About.classList.toggle('blur');
-        form.classList.toggle('blur');
-        footer.classList.toggle('blur');
-        toolbar.classList.toggle('blur');
-        hideScrollBar.classList.toggle('hide-scrollbar');
-      });
-    }
-
-    popupWindow.classList.toggle('showpopup') && popupWindow;
-    popupClose.classList.toggle('showpopup') && popupClose;
-    popupCloseD.classList.toggle('showpopup') && popupCloseD;
-    headline.classList.toggle('blur') && headline;
-    works.classList.toggle('blur') && works;
-    About.classList.toggle('blur') && About;
-    form.classList.toggle('blur') && form;
-    footer.classList.toggle('blur') && footer;
-    toolbar.classList.toggle('blur') && toolbar;
-    hideScrollBar.classList.toggle('hide-scrollbar') && hideScrollBar;
+    popupClose.addEventListener('click', () => {
+      popupWindow.classList.remove('showpopup');
+      headline.classList.remove('blur');
+      works.classList.remove('blur');
+      About.classList.remove('blur');
+      form.classList.remove('blur');
+      footer.classList.remove('blur');
+      toolbar.classList.remove('blur');
+      hideScrollBar.classList.remove('hide-scrollbar');
+    });
+    popupClose.addEventListener('click', () => {
+      popupWindow.classList.remove('showpopup');
+      headline.classList.remove('blur');
+      works.classList.remove('blur');
+      About.classList.remove('blur');
+      form.classList.remove('blur');
+      footer.classList.remove('blur');
+      toolbar.classList.remove('blur');
+      hideScrollBar.classList.remove('hide-scrollbar');
+    });
   });
 });
 
