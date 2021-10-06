@@ -14,10 +14,6 @@
   border-radius: 100vw;
 }
 
-body.hide-scrollbar {
-  overflow-y: hidden;
-}
-
 html {
   scroll-behavior: smooth;
 }
