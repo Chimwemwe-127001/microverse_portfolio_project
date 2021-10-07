@@ -118,6 +118,12 @@ trigger.addEventListener('click', () => {
 
 window.addEventListener('hashchange', () => {
   toggleNavShow();
+  headline.classList.remove('blur');
+  works.classList.remove('blur');
+  About.classList.remove('blur');
+  form.classList.remove('blur');
+  footer.classList.remove('blur');
+  toolbar.classList.remove('blur');
 });
 
 popupTriggers.forEach((project) => {
@@ -161,11 +167,38 @@ const mail = document.getElementById('mail');
 const errorMessage = document.querySelector('.error-message');
 
 formdata.addEventListener('submit', (e) => {
-  const RegExp = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
-  if (mail.value === mail.value.match(RegExp)) {
+  const Regex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+  if (mail.value.match(Regex)) {
     errorMessage.textContent = '';
   } else {
     e.preventDefault();
     errorMessage.innerHTML = '** FORM NOT SENT <br> ** Invalid Email Address ';
+  }
+});
+
+const getData = (e) => {
+  const Regex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+  if (mail.value.match(Regex)) {
+    const formLocalStorageData = {
+      id: Date.now(),
+      name: document.getElementById('name').value,
+      email: document.getElementById('mail').value,
+      message: document.getElementById('msg').value,
+    };
+
+    localStorage.setItem('formLocalStorageData', JSON.stringify(formLocalStorageData));
+  } else {
+    e.preventDefault();
+  }
+};
+formdata.addEventListener('change', getData);
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (localStorage.getItem('formLocalStorageData') !== null) {
+    let grabforminfo = localStorage.getItem('formLocalStorageData');
+    grabforminfo = JSON.parse(grabforminfo);
+    document.getElementById('name').value = grabforminfo.name;
+    document.getElementById('mail').value = grabforminfo.email;
+    document.getElementById('msg').value = grabforminfo.message;
   }
 });
