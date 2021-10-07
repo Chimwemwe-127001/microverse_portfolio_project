@@ -9,25 +9,25 @@ const form = document.querySelector('.form');
 const footer = document.querySelector('.footer');
 const trigger = document.getElementById('btn-trigger');
 const hideScrollBar = document.querySelector('body');
-const worksData = {
-  num: 6,
-  works: {
+const worksData = [
+  6,
+  {
     coverImg: './assets/img/Img__Plaholder.png',
     technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'HTML'],
   },
-};
+];
 
-for (let i = 0; i < worksData.num; i += 1) {
+for (let i = 0; i < worksData[0]; i += 1) {
   const recentWorksTemp = `
   <div class="img-plaholder">
-  <img src="${worksData.works.coverImg}" alt="Multi-Post Stories Gain+Glory">
+  <img src="${worksData[1].coverImg}" alt="Multi-Post Stories Gain+Glory">
   <div class="txt-content">
     <h3>Multi-Post Stories<br>+Glory</h3>
       <ul>
-        <li><p>${worksData.works.technologies[0]}</p></li>
-        <li><p>${worksData.works.technologies[1]}</p></li>
-        <li><p>${worksData.works.technologies[2]}</p></li>
-        <li><p>${worksData.works.technologies[3]}</p></li> 
+        <li><p>${worksData[1].technologies[0]}</p></li>
+        <li><p>${worksData[1].technologies[1]}</p></li>
+        <li><p>${worksData[1].technologies[2]}</p></li>
+        <li><p>${worksData[1].technologies[3]}</p></li> 
       </ul>
       <a class="btn popup " href="#">See Project</a>
   </div>
