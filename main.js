@@ -9,7 +9,6 @@ const form = document.querySelector('.form');
 const footer = document.querySelector('.footer');
 const trigger = document.getElementById('btn-trigger');
 const hideScrollBar = document.querySelector('body');
-const removeblur = document.querySelectorAll('.removeblur')
 const worksData = [
   6,
   {
