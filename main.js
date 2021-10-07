@@ -173,25 +173,24 @@ formdata.addEventListener('submit', (e) => {
 const getData = (e) => {
   const Regex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
   if (mail.value.match(Regex)) {
-    let formLocalStorageData = {
+    const formLocalStorageData = {
       id: Date.now(),
       name: document.getElementById('name').value,
       email: document.getElementById('mail').value,
-      message: document.getElementById('msg').value
+      message: document.getElementById('msg').value,
     };
 
     localStorage.setItem('formLocalStorageData', JSON.stringify(formLocalStorageData));
   } else {
     e.preventDefault();
   }
-}
+};
 formdata.addEventListener('submit', getData);
 
 document.addEventListener('DOMContentLoaded', () => {
   if (localStorage.getItem('formLocalStorageData') !== null) {
     let grabforminfo = localStorage.getItem('formLocalStorageData');
     grabforminfo = JSON.parse(grabforminfo);
-    console.log(grabforminfo);
     document.getElementById('name').value = grabforminfo.name;
     document.getElementById('mail').value = grabforminfo.email;
     document.getElementById('msg').value = grabforminfo.message;
