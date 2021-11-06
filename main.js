@@ -10,24 +10,49 @@ const footer = document.querySelector('.footer');
 const trigger = document.getElementById('btn-trigger');
 const hideScrollBar = document.querySelector('body');
 const worksData = [
-  6,
+  {
+    coverImg: './assets/img/toDoList_screenshot1.jpg',
+    title: 'To-Do-List',
+    technologies: ['Webpack', 'CSS', 'JavaScript', 'HTML'],
+  },
   {
     coverImg: './assets/img/Img__Plaholder.png',
+    title: 'Multi-Post Stories<br>+Glory',
+    technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'HTML'],
+  },
+  {
+    coverImg: './assets/img/Img__Plaholder.png',
+    title: 'Multi-Post Stories<br>+Glory',
+    technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'HTML'],
+  },
+  {
+    coverImg: './assets/img/Img__Plaholder.png',
+    title: 'Multi-Post Stories<br>+Glory',
+    technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'HTML'],
+  },
+  {
+    coverImg: './assets/img/Img__Plaholder.png',
+    title: 'Multi-Post Stories<br>+Glory',
+    technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'HTML'],
+  },
+  {
+    coverImg: './assets/img/Img__Plaholder.png',
+    title: 'Multi-Post Stories<br>+Glory',
     technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'HTML'],
   },
 ];
 
-for (let i = 0; i < worksData[0]; i += 1) {
+for (let i = 0; i < worksData.length; i += 1) {
   const recentWorksTemp = `
   <div class="img-plaholder">
-  <img src="${worksData[1].coverImg}" alt="Multi-Post Stories Gain+Glory">
+  <img src="${worksData[i].coverImg}" alt="Multi-Post Stories Gain+Glory">
   <div class="txt-content">
-    <h3>Multi-Post Stories<br>+Glory</h3>
+    <h3>${worksData[i].title}</h3>
       <ul>
-        <li><p>${worksData[1].technologies[0]}</p></li>
-        <li><p>${worksData[1].technologies[1]}</p></li>
-        <li><p>${worksData[1].technologies[2]}</p></li>
-        <li><p>${worksData[1].technologies[3]}</p></li> 
+        <li><p>${worksData[i].technologies[0]}</p></li>
+        <li><p>${worksData[i].technologies[1]}</p></li>
+        <li><p>${worksData[i].technologies[2]}</p></li>
+        <li><p>${worksData[i].technologies[3]}</p></li> 
       </ul>
       <a class="btn popup " href="#">See Project</a>
   </div>
@@ -36,67 +61,130 @@ for (let i = 0; i < worksData[0]; i += 1) {
 }
 const popupTriggers = document.querySelectorAll('.popup');
 const popupWindow = document.querySelector('.pop-up');
-const modal = {
-  name: 'Keeping track of hundreds of components',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-  featuredImage: './assets/img/Snapshoot_Portfolio.png',
-  desktopImage: './assets/img/Snapshoot_Portfolio_desktop.png',
-  seeLiveImg: './assets/img/see-live.svg',
-  seeSourceImg: './assets/img/Vector.svg',
-  technologiesMobile: ['Ruby on the rails', 'CSS', 'JavaScript'],
-  technologiesDesktop: ['Codekit', 'Github', 'JavaScript', 'Boostrap', 'Terminal', 'Codepen'],
-  linktoliveversion: '#',
-  linktosource: '#',
-};
+const modal = [
+  {
+    name: 'To-do-List',
+    description: 'A "To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. We build this website with ES6 and Webpack. We can add a new item, remove the selected item, edit the item , mark a selected item, and also can remove all items marked as complete at once.',
+    featuredImage: './assets/img/toDoList_screenshot1.jpg',
+    desktopImage: './assets/img/toDoList_screenshot2.jpg',
+    seeLiveImg: './assets/img/see-live.svg',
+    seeSourceImg: './assets/img/Vector.svg',
+    technologiesMobile: ['Ruby on the rails', 'CSS', 'JavaScript'],
+    technologiesDesktop: ['Codekit', 'Github', 'JavaScript', 'Boostrap', 'Terminal', 'Codepen'],
+    linktoliveversion: '#',
+    linktosource: '#',
+  },
+  {
+    name: 'Keeping track of hundreds of components',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    featuredImage: './assets/img/Snapshoot_Portfolio.png',
+    desktopImage: './assets/img/Snapshoot_Portfolio_desktop.png',
+    seeLiveImg: './assets/img/see-live.svg',
+    seeSourceImg: './assets/img/Vector.svg',
+    technologiesMobile: ['Ruby on the rails', 'CSS', 'JavaScript'],
+    technologiesDesktop: ['Codekit', 'Github', 'JavaScript', 'Boostrap', 'Terminal', 'Codepen'],
+    linktoliveversion: '#',
+    linktosource: '#',
+  },
+  {
+    name: 'Keeping track of hundreds of components',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    featuredImage: './assets/img/Snapshoot_Portfolio.png',
+    desktopImage: './assets/img/Snapshoot_Portfolio_desktop.png',
+    seeLiveImg: './assets/img/see-live.svg',
+    seeSourceImg: './assets/img/Vector.svg',
+    technologiesMobile: ['Ruby on the rails', 'CSS', 'JavaScript'],
+    technologiesDesktop: ['Codekit', 'Github', 'JavaScript', 'Boostrap', 'Terminal', 'Codepen'],
+    linktoliveversion: '#',
+    linktosource: '#',
+  },
+  {
+    name: 'Keeping track of hundreds of components',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    featuredImage: './assets/img/Snapshoot_Portfolio.png',
+    desktopImage: './assets/img/Snapshoot_Portfolio_desktop.png',
+    seeLiveImg: './assets/img/see-live.svg',
+    seeSourceImg: './assets/img/Vector.svg',
+    technologiesMobile: ['Ruby on the rails', 'CSS', 'JavaScript'],
+    technologiesDesktop: ['Codekit', 'Github', 'JavaScript', 'Boostrap', 'Terminal', 'Codepen'],
+    linktoliveversion: '#',
+    linktosource: '#',
+  },
+  {
+    name: 'Keeping track of hundreds of components',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    featuredImage: './assets/img/Snapshoot_Portfolio.png',
+    desktopImage: './assets/img/Snapshoot_Portfolio_desktop.png',
+    seeLiveImg: './assets/img/see-live.svg',
+    seeSourceImg: './assets/img/Vector.svg',
+    technologiesMobile: ['Ruby on the rails', 'CSS', 'JavaScript'],
+    technologiesDesktop: ['Codekit', 'Github', 'JavaScript', 'Boostrap', 'Terminal', 'Codepen'],
+    linktoliveversion: '#',
+    linktosource: '#',
+  },
+  {
+    name: 'Keeping track of hundreds of components',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    featuredImage: './assets/img/Snapshoot_Portfolio.png',
+    desktopImage: './assets/img/Snapshoot_Portfolio_desktop.png',
+    seeLiveImg: './assets/img/see-live.svg',
+    seeSourceImg: './assets/img/Vector.svg',
+    technologiesMobile: ['Ruby on the rails', 'CSS', 'JavaScript'],
+    technologiesDesktop: ['Codekit', 'Github', 'JavaScript', 'Boostrap', 'Terminal', 'Codepen'],
+    linktoliveversion: '#',
+    linktosource: '#',
+  },
+]
 
 function displayPopup() {
   let popupTemplate = '';
-  if (window.innerWidth < 900) {
-    popupTemplate = `
-      <img class="close" src="./assets/img/Icon.svg" alt="">
-      <img class="mobile" src="./assets/img/Snapshoot_Portfolio.png" alt="">
-      <div class="btnsh1">
-        <h1>${modal.name}</h1>
-        <div class="side">
-          <a href="${modal.linktoliveversion}" class="btn">See Live<img src="./assets/img/see-live.svg" alt=""></a>
-          <a href="${modal.linktosource}" class="btn">See Source<img src="./assets/img/Vector.svg" alt=""></a>
+  for(let i = 0; i < modal.length; i++){
+    if (window.innerWidth < 900) {
+        popupTemplate = `
+        <img class="close" src="./assets/img/Icon.svg" alt="">
+        <img class="mobile" src="${modal[i].featuredImage}" alt="">
+        <div class="btnsh1">
+          <h1>${modal[i].name}</h1>
+          <div class="side">
+            <a href="${modal[i].linktoliveversion}" class="btn">See Live<img src="./assets/img/see-live.svg" alt=""></a>
+            <a href="${modal[i].linktosource}" class="btn">See Source<img src="./assets/img/Vector.svg" alt=""></a>
+          </div>
         </div>
-      </div>
-      <ul>
-        <li><p>${modal.technologiesMobile[0]}</p></li>
-        <li><p>${modal.technologiesMobile[1]}</p></li>
-        <li><p>${modal.technologiesMobile[2]}</p></li>
-      </ul>
-      <p>${modal.description}</p>
-      <div class="btns">
-        <a class="btn">See Live<img src="${modal.seeLiveImg}" alt=""></a>
-        <a class="btn">See Source<img src="${modal.seeSourceImg}" alt=""></a>
-      </div>
-    `;
-  } else {
-    popupTemplate = `
-    <img class="close" src="./assets/img/desktop_modal_close.svg" alt="">
-    <img class="desktop" src="./assets/img/Snapshoot_Portfolio_desktop.png" alt="">
-    <div class="btnsh1">
-      <h1>${modal.name}</h1>
-      <div class="side">
-        <a class="btn">See Live<img src="${modal.seeLiveImg}" alt=""></a>
-        <a class="btn">See Source<img src="${modal.seeSourceImg}" alt=""></a>
-      </div>
-    </div>
-    <ul>
-      <li><p>${modal.technologiesDesktop[0]}</p></li>
-      <li><p>${modal.technologiesDesktop[1]}</p></li>
-      <li><p>${modal.technologiesDesktop[2]}</p></li>
-      <li><p>${modal.technologiesDesktop[3]}</p></li>
-      <li><p>${modal.technologiesDesktop[4]}</p></li>
-      <li><p>${modal.technologiesDesktop[5]}</p></li>
-      <li><p>${modal.technologiesDesktop[6]}</p></li>
-     </ul>
-    <p>${modal.description}</p>
-    `;
+        <ul>
+          <li><p>${modal[i].technologiesMobile[0]}</p></li>
+          <li><p>${modal[i].technologiesMobile[1]}</p></li>
+          <li><p>${modal[i].technologiesMobile[2]}</p></li>
+        </ul>
+        <p>${modal[i].description}</p>
+        <div class="btns">
+          <a class="btn">See Live<img src="${modal[i].seeLiveImg}" alt=""></a>
+          <a class="btn">See Source<img src="${modal[i].seeSourceImg}" alt=""></a>
+        </div>
+        `;
+    } else {
+        popupTemplate = `
+        <img class="close" src="./assets/img/desktop_modal_close.svg" alt="">
+        <img class="desktop" src="${modal[i].desktopImage}" alt="">
+        <div class="btnsh1">
+          <h1>${modal[i].name}</h1>
+          <div class="side">
+            <a class="btn">See Live<img src="${modal[i].seeLiveImg}" alt=""></a>
+            <a class="btn">See Source<img src="${modal[i].seeSourceImg}" alt=""></a>
+          </div>
+        </div>
+        <ul>
+          <li><p>${modal[i].technologiesDesktop[0]}</p></li>
+          <li><p>${modal[i].technologiesDesktop[1]}</p></li>
+          <li><p>${modal[i].technologiesDesktop[2]}</p></li>
+          <li><p>${modal[i].technologiesDesktop[3]}</p></li>
+          <li><p>${modal[i].technologiesDesktop[4]}</p></li>
+          <li><p>${modal[i].technologiesDesktop[5]}</p></li>
+          <li><p>${modal[i].technologiesDesktop[6]}</p></li>
+        </ul>
+        <p>${modal[i].description}</p>
+        `;
+    }
   }
-
   return popupTemplate;
 }
 
@@ -126,8 +214,8 @@ window.addEventListener('hashchange', () => {
   toolbar.classList.remove('blur');
 });
 
-popupTriggers.forEach((project) => {
-  project.addEventListener('click', (e) => {
+for(let i = 0; i < popupTriggers.length; i++) {
+  popupTriggers[i].addEventListener('click', (e) => {
     e.preventDefault();
     popupWindow.innerHTML = displayPopup();
     popupWindow.classList.add('showpopup');
@@ -160,7 +248,7 @@ popupTriggers.forEach((project) => {
       hideScrollBar.classList.remove('hide-scrollbar');
     });
   });
-});
+}
 
 const formdata = document.querySelector('.form-data');
 const mail = document.getElementById('mail');
